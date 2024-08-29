@@ -1,20 +1,19 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: delete-ingress
+  name: add-ingress
   labels:
-    app: get
+   app: add
 spec:
   ingressClassName: azure-application-gateway
   rules:
-  - host: delete.asishkashyap.online
+  - host: add.asishkashyap.online
     http:
       paths:
       - pathType: Prefix
         path: "/"
         backend:
           service:
-            name: deletetask-svc
-            port:
-              number: 80
-
+            name: add-svc
+            port: 
+              number: 80 
