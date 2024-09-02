@@ -7,4 +7,4 @@ K8 cluster,
 Ingress,
 SQL Database,
 Key Vault,
-Secret,
+Secret
